@@ -19,4 +19,10 @@ public class NewsServiceImpl implements NewsService {
     public NewsWithBLOBs queryById(int id) {
         return newsMapper.selectByPrimaryKey(id);
     }
+
+    public void delById(int id) {
+        newsMapper.deleteByPrimaryKey(id);
+    }
+
+
 }

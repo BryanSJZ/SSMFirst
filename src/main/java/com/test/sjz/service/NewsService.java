@@ -13,4 +13,6 @@ public interface NewsService {
      * @return 新闻实体类
      */
     public NewsWithBLOBs queryById(int id);
+
+    public void delById(int id);
 }
